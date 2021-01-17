@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.hide
+{
+    display: none;
+}
+.car,.enemy{
+    background-color:red;
+    opacity: .6;
+    height: 100px;
+    width: 75px;
+    position: absolute;
+    bottom: 100px;
+    left: 6px;
+    z-index: 2;
+    /* background-image: url("https://www.pngfind.com/pngs/m/189-1896934_800-x-800-4-small-car-icon-white.png"); */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    object-fit: cover;
+
+}
+.car::after
+{
+    position: absolute;
+    content: "USER";
+    width: 100%;
+    letter-spacing: .5rem;
+    line-height: 100px;
+    color: white;
+    padding: 4px;
+}
+.enemy::after{
+    position: absolute;
+    content: "ENEMY";
+    width: 100%;
+    letter-spacing: .2rem;
+    line-height: 100px;
+    color:white;
+    padding: 4px;
+}
+.gameArea{
+    height: 100vh;
+    width: 400px;
+    background: black;
+    opacity: .8;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+    border-right: 7px dashed #c8d6e5;
+    border-left: 7px dashed #c8d6e5;
+}
+.line{
+    position: absolute;
+    width: 10px;
+    height: 80px;
+    left: 195px;
+    top: 10px;
+    background-color: white;
+}
+.score{
+    position: absolute;
+    top: 15px;
+    left: 40px;
+    background: #10ac84;
+    max-width: 400px;
+    /* min-width: 20px; */
+    /* height: 70px; */
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    box-shadow: 0 5px 5px #777;
+    line-height: 70px;
+     /* padding: 10px;  */
+     padding-left: 20px; 
+     padding-right: 20px;
+
+    z-index: 4;
+    border-radius: 10px
+}
+.date{
+    
+}
+.startScreen{
+    position: absolute;
+    background-color: #ee5253;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 5;
+    text-align: center;
+    border: 1px solid #ff6b6b;
+    padding:15px;
+    margin: auto;
+    width: 50%;
+    cursor: pointer;
+    letter-spacing: 5;
+    font-size: 20px;
+    word-spacing: 3;
+    line-height: 30px;
+    text-transform: uppercase;
+    box-shadow: 0 5px 5px #777;
+    border-radius: 10px;
+    
+}
