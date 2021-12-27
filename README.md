@@ -16,3 +16,38 @@ This web project is about User and Enemies game. In this game we need to protect
 * [JAVASCRIPT](https://javascript.info/)
 
 ## Getting Started
+
+This whole game controlled by mainly 6 funtions 
+Functions name like 
+* Start
+* Movelines
+* Iscollides
+* Endgame
+* Moveenemy 
+* Gameplay 
+```
+start function
+```
+This function responsible for starting of the game and initialise the score card .
+
+```
+Iscollides function
+```
+This function will confirm  whether user touch any enemy or not , if it touch a enemy then it will stop the game 
+
+```
+Moveenemy
+```
+This funtion will control all enemy movement and no two enemies should collide each others 
+
+
+
+
+
+
+
+ ## Contact
+ Linkdin - [Linkdin](https://www.linkedin.com/in/raushankumar43/)
+ 
+ 
+ Project Link: [Project-url](https://github.com/Tejas-r281/Running-games-)
